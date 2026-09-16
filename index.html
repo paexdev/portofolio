@@ -1,0 +1,992 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="index.js" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>paex.dev</title>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar shadow-sm p-3 rounded"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">paex.dev</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Abaut Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skill</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <button
+            class="btn btn-outline-success"
+            data-bs-toggle="modal"
+            data-bs-target="#loginModal"
+          >
+            Login
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- HOME -->
+    <section id="home" class="hero-section">
+      <div class="container">
+        <div class="row align-items-center min-vh-100">
+          <h1 class="hero-title">
+            <span> Paex.Dev</span>
+          </h1>
+          <h2 class="hero-subtitle">
+            Junior
+            <span>Full-Stack Developer</span>
+          </h2>
+          <p class="hero-description">
+            Saya membangun website dan aplikasi web yang modern, responsive, dan
+            mudah digunakan. Fokus pada pengembangan dengan
+            <strong>Python, Django</strong>, dan teknologi web modern.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-purple btn-lg rounded-pill">
+              <i class="fa-solid fa-rocket me-2"></i>
+              View My Projects
+            </a>
+            <a href="#" class="btn btn-outline-light btn-lg rounded-pill">
+              <i class="fa-solid fa-download me-2"></i>
+              Download CV
+            </a>
+          </div>
+          <div class="tech-stack">
+            <div class="tech-item">
+              <i class="fa-brands fa-html5 html-icon"></i>
+              <span>HTML</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-brands fa-css3-alt css-icon"></i>
+              <span>CSS</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-brands fa-js js-icon"></i>
+              <span>JavaScript</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-brands fa-python python-icon"></i>
+              <span>Python</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-solid fa-layer-group django-icon"></i>
+              <span>Django</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-solid fa-database postgres-icon"></i>
+              <span>PostgreSQL</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-brands fa-git-alt git-icon"></i>
+              <span>Git</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-brands fa-github github-icon"></i>
+              <span>GitHub</span>
+            </div>
+          </div>
+          <div class="statistics">
+            <div class="stat-item">
+              <h3>5+</h3>
+              <p>Projects Completed</p>
+            </div>
+            <div class="stat-item">
+              <h3>3+</h3>
+              <p>Skills Mastered</p>
+            </div>
+          </div>
+          <div class="social-area">
+            <a href="#" class="social-link">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="#" class="social-link">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="#" class="social-link">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <span class="social-divider"></span>
+            <span class="social-text">
+              Let's build something great together!
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ABAUT US -->
+    <section id="about" class="section-padding about-section">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <span class="section-label"> About Me </span>
+            <h1 class="about-title">
+              <span> Paex.Dev</span>
+            </h1>
+            <h2 class="about-subtitle">
+              <span>My Goal!!</span>
+            </h2>
+            <p>
+              Saya ingin terus berkembang sebagai Full Stack Developer dan
+              berkontribusi dalam membangun aplikasi yang bermanfaat, scalable,
+              dan memiliki pengalaman pengguna yang baik.
+            </p>
+          </div>
+
+          <div class="col-lg-6">
+            <h2 class="description">Description!!</h2>
+            <p class="about-description">
+              <strong>Halo!</strong> Saya seorang Junior Full Stack Developer
+              yang memiliki ketertarikan dalam membangun aplikasi web yang
+              modern, responsif, dan mudah digunakan. Saya memiliki pengalaman
+              dan pemahaman dalam pengembangan frontend maupun backend, mulai
+              dari membuat tampilan antarmuka hingga membangun API, mengelola
+              database, dan menghubungkan berbagai bagian aplikasi menjadi satu
+              sistem yang berjalan dengan baik. Saya senang mempelajari
+              teknologi baru, menyelesaikan masalah melalui kode, dan terus
+              mengembangkan kemampuan saya melalui berbagai project. Saat ini
+              saya fokus untuk meningkatkan kemampuan dalam web development,
+              backend development, database, dan software engineering.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SKILLS -->
+    <section id="skills" class="skills-section">
+      <div class="container">
+        <div class="section-title">
+          <span>MY SKILLS</span>
+          <h2>Technical Skills</h2>
+          <p>
+            Teknologi dan tools yang saya gunakan dalam membangun website dan
+            aplikasi web.
+          </p>
+        </div>
+        <!-- FRONTEND -->
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="skills-card">
+              <div class="skills-card-header">
+                <div class="skills-icon">
+                  <i class="fa-solid fa-code"></i>
+                </div>
+                <div>
+                  <h4>Frontend</h4>
+                  <p>Web Interface</p>
+                </div>
+              </div>
+              <!-- HTML -->
+              <div class="skill">
+                <div class="skill-info">
+                  <span>
+                    <i class="fa-brands fa-html5"></i>
+                    HTML5
+                  </span>
+                  <span>90%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar skill-html" style="width: 90%"></div>
+                </div>
+              </div>
+              <!-- CSS -->
+              <div class="skill">
+                <div class="skill-info">
+                  <span>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    CSS3
+                  </span>
+                  <span>85%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar skill-css" style="width: 85%"></div>
+                </div>
+              </div>
+              <!-- Bootstrap -->
+              <div class="skill">
+                <div class="skill-info">
+                  <span>
+                    <i class="fa-brands fa-bootstrap"></i>
+                    Bootstrap 5
+                  </span>
+                  <span>85%</span>
+                </div>
+                <div class="progress">
+                  <div
+                    class="progress-bar skill-bootstrap"
+                    style="width: 85%"
+                  ></div>
+                </div>
+              </div>
+              <!-- JavaScript -->
+              <div class="skill">
+                <div class="skill-info">
+                  <span>
+                    <i class="fa-brands fa-js"></i>
+                    JavaScript
+                  </span>
+                  <span>70%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar skill-js" style="width: 70%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- BACKEND -->
+          <div class="col-lg-4">
+            <div class="skills-card">
+              <div class="skills-card-header">
+                <div class="skills-icon">
+                  <i class="fa-solid fa-server"></i>
+                </div>
+                <div>
+                  <h4>Backend</h4>
+                  <p>Application Logic</p>
+                </div>
+              </div>
+              <!-- Python -->
+              <div class="skill">
+                <div class="skill-info">
+                  <span>
+                    <i class="fa-brands fa-python"></i>
+                    Python
+                  </span>
+                  <span>75%</span>
+                </div>
+                <div class="progress">
+                  <div
+                    class="progress-bar skill-python"
+                    style="width: 75%"
+                  ></div>
+                </div>
+              </div>
+              <!-- Django -->
+              <div class="skill">
+                <div class="skill-info">
+                  <span>
+                    <i class="fa-solid fa-layer-group"></i>
+                    Django
+                  </span>
+                  <span>70%</span>
+                </div>
+                <div class="progress">
+                  <div
+                    class="progress-bar skill-django"
+                    style="width: 70%"
+                  ></div>
+                </div>
+              </div>
+              <!-- REST API -->
+              <div class="skill">
+                <div class="skill-info">
+                  <span>
+                    <i class="fa-solid fa-cloud"></i>
+                    REST API
+                  </span>
+                  <span>60%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar skill-api" style="width: 60%"></div>
+                </div>
+              </div>
+              <!-- Authentication -->
+              <div class="skill">
+                <div class="skill-info">
+                  <span>
+                    <i class="fa-solid fa-shield-halved"></i>
+                    Authentication
+                  </span>
+                  <span>65%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar skill-auth" style="width: 65%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- DATABASE & TOOLS -->
+          <div class="col-lg-4">
+            <div class="skills-card">
+              <div class="skills-card-header">
+                <div class="skills-icon">
+                  <i class="fa-solid fa-toolbox"></i>
+                </div>
+                <div>
+                  <h4>Database & Tools</h4>
+                  <p>Development Tools</p>
+                </div>
+              </div>
+              <!-- PostgreSQL -->
+              <div class="skill">
+                <div class="skill-info">
+                  <span>
+                    <i class="fa-solid fa-database"></i>
+                    PostgreSQL
+                  </span>
+                  <span>70%</span>
+                </div>
+                <div class="progress">
+                  <div
+                    class="progress-bar skill-postgres"
+                    style="width: 70%"
+                  ></div>
+                </div>
+              </div>
+              <!-- Git -->
+              <div class="skill">
+                <div class="skill-info">
+                  <span>
+                    <i class="fa-brands fa-git-alt"></i>
+                    Git
+                  </span>
+                  <span>75%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar skill-git" style="width: 75%"></div>
+                </div>
+              </div>
+              <!-- GitHub -->
+              <div class="skill">
+                <div class="skill-info">
+                  <span>
+                    <i class="fa-brands fa-github"></i>
+                    GitHub
+                  </span>
+                  <span>75%</span>
+                </div>
+                <div class="progress">
+                  <div
+                    class="progress-bar skill-github"
+                    style="width: 75%"
+                  ></div>
+                </div>
+              </div>
+              <!-- VS Code -->
+              <div class="skill">
+                <div class="skill-info">
+                  <span>
+                    <i class="fa-solid fa-code"></i>
+                    VS Code
+                  </span>
+                  <span>85%</span>
+                </div>
+                <div class="progress">
+                  <div
+                    class="progress-bar skill-vscode"
+                    style="width: 85%"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- TECHNOLOGY BADGES -->
+        <div class="technology-area">
+          <h4>Technologies I Work With</h4>
+          <div class="technology-list">
+            <span class="technology-badge">
+              <i class="fa-brands fa-html5"></i>
+              HTML5
+            </span>
+            <span class="technology-badge">
+              <i class="fa-brands fa-css3-alt"></i>
+              CSS3
+            </span>
+            <span class="technology-badge">
+              <i class="fa-brands fa-bootstrap"></i>
+              Bootstrap
+            </span>
+            <span class="technology-badge">
+              <i class="fa-brands fa-js"></i>
+              JavaScript
+            </span>
+            <span class="technology-badge">
+              <i class="fa-brands fa-python"></i>
+              Python
+            </span>
+            <span class="technology-badge">
+              <i class="fa-solid fa-layer-group"></i>
+              Django
+            </span>
+            <span class="technology-badge">
+              <i class="fa-solid fa-database"></i>
+              PostgreSQL
+            </span>
+            <span class="technology-badge">
+              <i class="fa-brands fa-git-alt"></i>
+              Git
+            </span>
+            <span class="technology-badge">
+              <i class="fa-brands fa-github"></i>
+              GitHub
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- PROJECTS -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <!-- SECTION HEADER -->
+        <div class="section-title">
+          <span>MY PROJECTS</span>
+          <h2>Featured Projects</h2>
+          <p>
+            Beberapa project yang saya bangun untuk mengembangkan kemampuan
+            Full-Stack Development.
+          </p>
+        </div>
+        <!-- PROJECT 1 -->
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="project-card">
+              <!-- IMAGE -->
+              <div class="project-image">
+                <div class="project-overlay">
+                  <a href="#" class="project-link" aria-label="View project">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                  <a href="#" class="project-link" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+                <i class="fa-solid fa-network-wired project-icon"></i>
+              </div>
+              <!-- CONTENT -->
+              <div class="project-content">
+                <span class="project-category"> Web Application </span>
+                <h3>Smart Lab</h3>
+                <p>
+                  Sistem management dan monitoring laboratorium komputer sekolah
+                  untuk membantu teknisi mengelola perangkat, maintenance,
+                  ticketing, dan monitoring.
+                </p>
+                <!-- TECHNOLOGIES -->
+                <div class="project-tech">
+                  <span>Django</span>
+                  <span>Python</span>
+                  <span>PostgreSQL</span>
+                  <span>Bootstrap 5</span>
+                </div>
+                <!-- FOOTER -->
+                <div class="project-footer">
+                  <a href="#" class="view-project">
+                    View Project
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                  <a href="#" class="github-project">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 2 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="project-card">
+              <div class="project-image">
+                <div class="project-overlay">
+                  <a href="#" class="project-link">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                  <a href="#" class="project-link">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+                <i class="fa-solid fa-mug-hot project-icon"></i>
+              </div>
+              <div class="project-content">
+                <span class="project-category"> E-Commerce </span>
+                <h3>Coffee Store</h3>
+                <p>
+                  Website e-commerce kedai kopi dengan fitur produk, kategori,
+                  keranjang, checkout, order, dan dashboard management.
+                </p>
+                <div class="project-tech">
+                  <span>Django</span>
+                  <span>Python</span>
+                  <span>PostgreSQL</span>
+                  <span>Bootstrap 5</span>
+                </div>
+                <div class="project-footer">
+                  <a href="#" class="view-project">
+                    View Project
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                  <a href="#" class="github-project">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--  PROJECT 3 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="project-card">
+              <div class="project-image">
+                <div class="project-overlay">
+                  <a href="#" class="project-link">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                  <a href="#" class="project-link">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+                <i class="fa-solid fa-laptop-code project-icon"></i>
+              </div>
+              <div class="project-content">
+                <span class="project-category"> Portfolio </span>
+                <h3>Personal Portfolio</h3>
+                <p>
+                  Website portfolio personal untuk menampilkan profile, skills,
+                  project, experience, dan informasi kontak.
+                </p>
+                <div class="project-tech">
+                  <span>HTML5</span>
+                  <span>CSS3</span>
+                  <span>JavaScript</span>
+                  <span>Bootstrap 5</span>
+                </div>
+                <div class="project-footer">
+                  <a href="#" class="view-project">
+                    View Project
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                  <a href="#" class="github-project">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 4 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="project-card">
+              <div class="project-image">
+                <div class="project-overlay">
+                  <a href="#" class="project-link">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                  <a href="#" class="project-link">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+                <i class="fa-solid fa-clipboard-check project-icon"></i>
+              </div>
+              <div class="project-content">
+                <span class="project-category"> Python Application </span>
+                <h3>Exam Application</h3>
+                <p>
+                  Aplikasi ujian sederhana berbasis Python dengan soal, pilihan
+                  jawaban, penilaian otomatis, dan hasil ujian.
+                </p>
+                <div class="project-tech">
+                  <span>Python</span>
+                  <span>Function</span>
+                  <span>Loop</span>
+                  <span>JSON</span>
+                </div>
+                <div class="project-footer">
+                  <a href="#" class="view-project">
+                    View Project
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                  <a href="#" class="github-project">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- PROJECT 5 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="project-card">
+              <div class="project-image">
+                <div class="project-overlay">
+                  <a href="#" class="project-link">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                  <a href="#" class="project-link">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+                <i class="fa-solid fa-server project-icon"></i>
+              </div>
+              <div class="project-content">
+                <span class="project-category"> IT Management </span>
+                <h3>IT Asset Management</h3>
+                <p>
+                  Sistem untuk mencatat dan mengelola inventaris perangkat IT
+                  seperti PC, laptop, printer, switch, router, dan perangkat
+                  lainnya.
+                </p>
+                <div class="project-tech">
+                  <span>Django</span>
+                  <span>Python</span>
+                  <span>Database</span>
+                  <span>Bootstrap</span>
+                </div>
+                <div class="project-footer">
+                  <a href="#" class="view-project">
+                    View Project
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                  <a href="#" class="github-project">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 6 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="project-card">
+              <div class="project-image">
+                <div class="project-overlay">
+                  <a href="#" class="project-link">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                  <a href="#" class="project-link">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+                <i class="fa-solid fa-chart-line project-icon"></i>
+              </div>
+              <div class="project-content">
+                <span class="project-category"> Dashboard </span>
+                <h3>School Dashboard</h3>
+                <p>
+                  Dashboard untuk menampilkan data perangkat, jaringan,
+                  maintenance, ticket, dan statistik IT secara terstruktur.
+                </p>
+                <div class="project-tech">
+                  <span>JavaScript</span>
+                  <span>Chart.js</span>
+                  <span>Bootstrap</span>
+                  <span>Django</span>
+                </div>
+                <div class="project-footer">
+                  <a href="#" class="view-project">
+                    View Project
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                  <a href="#" class="github-project">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- VIEW ALL -->
+        <div class="projects-button">
+          <a href="#" class="btn btn-outline-light rounded-pill px-4">
+            View All Projects
+            <i class="fa-solid fa-arrow-right ms-2"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="section-title text-center">
+          <span>CONTACT ME</span>
+          <h2>Let's Work Together</h2>
+          <p>
+            Punya project atau ingin berdiskusi? Jangan ragu untuk menghubungi
+            saya.
+          </p>
+        </div>
+        <div class="row g-4 justify-content-center">
+          <!-- CONTACT INFO -->
+          <div class="col-lg-5">
+            <div class="contact-info-card">
+              <h3>Let's talk</h3>
+              <p>
+                Saya terbuka untuk berdiskusi mengenai website, aplikasi web,
+                project development, maupun kerja sama lainnya.
+              </p>
+              <!-- WHATSAPP -->
+              <a href="#" class="contact-item">
+                <div class="contact-icon whatsapp">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div>
+                  <span>WhatsApp</span>
+                  <strong> Chat WhatsApp </strong>
+                </div>
+                <i
+                  class="fa-solid fa-arrow-up-right-from-square contact-arrow"
+                ></i>
+              </a>
+              <!-- TELEGRAM -->
+              <a href="#" class="contact-item">
+                <div class="contact-icon telegram">
+                  <i class="fa-brands fa-telegram"></i>
+                </div>
+                <div>
+                  <span>Telegram</span>
+
+                  <strong> Chat Telegram </strong>
+                </div>
+                <i
+                  class="fa-solid fa-arrow-up-right-from-square contact-arrow"
+                ></i>
+              </a>
+              <!-- EMAIL -->
+              <a href="#" class="contact-item">
+                <div class="contact-icon email">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div>
+                  <span>Email</span>
+                  <strong> fauzantoolman@gmail.com </strong>
+                </div>
+                <i
+                  class="fa-solid fa-arrow-up-right-from-square contact-arrow"
+                ></i>
+              </a>
+            </div>
+          </div>
+          <!-- CONTACT CTA-->
+          <div class="col-lg-5">
+            <div class="contact-cta">
+              <div class="cta-icon">
+                <i class="fa-solid fa-paper-plane"></i>
+              </div>
+              <h3>Have a project in mind?</h3>
+              <p>
+                Ceritakan project yang ingin kamu buat. Saya akan dengan senang
+                hati berdiskusi dan mencari solusi terbaik.
+              </p>
+              <div class="cta-buttons">
+                <a href="#" class="btn-contact whatsapp-btn">
+                  <i class="fa-brands fa-whatsapp"></i>
+                  WhatsApp
+                </a>
+                <a href="#" class="btn-contact telegram-btn">
+                  <i class="fa-brands fa-telegram"></i>
+                  Telegram
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-5">
+            <a href="#home" class="footer-brand">
+              <i class="fa-solid fa-code"></i>
+              Paex<span>.dev</span>
+            </a>
+            <p class="footer-description">
+              Junior Full-Stack Developer yang membangun website dan aplikasi
+              web modern, responsive, dan mudah digunakan.
+            </p>
+          </div>
+          <div class="col-6 col-lg-3">
+            <h5 class="footer-title">Quick Links</h5>
+            <ul class="footer-links">
+              <li>
+                <a href="#home">Home</a>
+              </li>
+              <li>
+                <a href="#about">About</a>
+              </li>
+              <li>
+                <a href="#skills">Skills</a>
+              </li>
+              <li>
+                <a href="#projects">Projects</a>
+              </li>
+              <li>
+                <a href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-4">
+            <h5 class="footer-title">Connect With Me</h5>
+            <p class="footer-description">
+              Let's build something great together.
+            </p>
+            <div class="footer-social">
+              <a href="#" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="#" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="#" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="mailto:emailkamu@gmail.com" aria-label="Email">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <hr class="footer-divider" />
+        <div class="footer-bottom">
+          <p>
+            © 2026
+            <strong>Fauzan.dev</strong>. All Rights Reserved.
+          </p>
+          <p>
+            Built with
+            <span class="footer-tech"> HTML </span>
+            •
+            <span class="footer-tech"> CSS </span>
+            •
+            <span class="footer-tech"> Bootstrap 5 </span>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- LOGIN MODAL -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content login-modal">
+          <div class="modal-body p-4 p-md-5">
+            <button
+              type="button"
+              class="btn-close btn-close-white position-absolute top-0 end-0 m-3"
+              data-bs-dismiss="modal"
+            ></button>
+            <!-- LOGIN HEADER -->
+            <div class="text-center mb-4">
+              <div class="login-logo mx-auto mb-3">{LOGIN}</div>
+              <h4 class="fw-bold">Selamat Datang</h4>
+              <p class="text-secondary small mb-0">
+                Login untuk melanjutkan ke akun Anda.
+              </p>
+            </div>
+            <!-- LOGIN FORM -->
+            <form id="loginForm">
+              <div class="mb-3">
+                <label for="email" class="form-label small"> Email </label>
+                <input
+                  type="email"
+                  class="form-control custom-input"
+                  id="email"
+                  placeholder="nama@email.com"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <div class="d-flex justify-content-between">
+                  <label for="password" class="form-label small">
+                    Password
+                  </label>
+                  <a href="#" class="forgot-password"> Lupa password? </a>
+                </div>
+                <div class="input-group">
+                  <input
+                    type="password"
+                    class="form-control custom-input"
+                    id="password"
+                    placeholder="Masukkan password"
+                    required
+                  />
+                  <button
+                    class="btn password-button"
+                    type="button"
+                    id="togglePassword"
+                  >
+                    <i class="bi bi-eye"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="form-check mb-4">
+                <input class="form-check-input" type="checkbox" id="remember" />
+                <label
+                  class="form-check-label small text-secondary"
+                  for="remember"
+                >
+                  Ingat saya
+                </label>
+              </div>
+              <button type="submit" class="btn btn-primary-custom w-100">
+                Login
+              </button>
+            </form>
+            <!-- DIVIDER -->
+            <div class="divider my-4">
+              <span>atau</span>
+            </div>
+            <!-- GOOGLE -->
+            <button type="button" class="btn google-button w-100">
+              <strong>G</strong>
+              Login dengan Google
+            </button>
+            <p class="text-center text-secondary small mt-4 mb-0">
+              Belum punya akun?
+              <a href="#" class="register-link"> Daftar sekarang </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
